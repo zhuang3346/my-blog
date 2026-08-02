@@ -30,7 +30,7 @@ export const siteConfig = {
   danmakuList: ["给一个啊", "不是人呢？", "塔菲牛逼喵", "在干嘛呢？", "有笨蛋嘛？", "前方高能反应！", "MD 模拟什么时候才能出图啊", "Graph Neural Networks 炼丹中...", "BUG 修复进度 99%", "今天背单词了吗？", "写算法中", "睡大觉中", "到底在干嘛？"],
   gitalkConfig: {
     clientID: "Ov23liSKYYGRCk468kOz",
-    clientSecret: "41872def26e414b74649c1ade0af396b37c02c28",
+    clientSecret: "",
     repo: "my-blog",
     owner: "zhuang3346",
     admin: ["zhuang3346"],

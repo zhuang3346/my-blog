@@ -20,7 +20,7 @@ export default function Comments() {
 
     const gitalk = new Gitalk({
       clientID: siteConfig.gitalkConfig.clientID,
-      clientSecret: siteConfig.gitalkConfig.clientSecret,
+      clientSecret: process.env.NEXT_PUBLIC_GITALK_CLIENT_SECRET || '',
       repo: siteConfig.gitalkConfig.repo,
       owner: siteConfig.gitalkConfig.owner,
       admin: siteConfig.gitalkConfig.admin,
