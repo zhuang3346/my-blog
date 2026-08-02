@@ -14,7 +14,7 @@ export const siteConfig = {
   bgImages: ["/bg1.jpg", "/bg2.jpg", "/bg3.jpg"],
   defaultPostCover: "/default-cover.jpg",
   photoWallImage: "/bg1.jpg",
-  cloudMusicIds: ["1809646618", "3361076230", "1859390262"],
+  cloudMusicIds: [],
   localMusic: [{"file": "/music/music-7bc8bf36.mp3", "title": "她的睫毛", "artist": "周傑倫"}] as { file: string; title: string; artist: string }[],
   social: {
     github: "https://github.com/zhuang3346",
