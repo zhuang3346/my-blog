@@ -67,7 +67,7 @@ export default function CyberCat() {
     setInputValue('');
     setShowInput(false);
     setIsThinking(true);
-    speak("让本喵想想喵...", 10000);
+    speak("。。。。。。", 10000);
 
     try {
       const res = await fetch('/api/chat', {

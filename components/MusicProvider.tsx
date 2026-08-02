@@ -99,18 +99,30 @@ export function MusicProvider({ children }: { children: ReactNode }) {
             lyrics: song.lrc ? parseLrc(song.lrc) : []
           }));
 
-        if (isMounted) {
-          if (mergedPlaylist.length > 0) setPlaylist(mergedPlaylist);
-          else setCurrentLyric("云端链路受阻");
-          setIsLoading(false);
-        }
-      } catch (error) {
-        if (isMounted) { setCurrentLyric("网络初始化失败"); setIsLoading(false); }
-      }
-    };
+        // 混入本地音乐
+          const localSongs = ((siteConfig as any).localMusic || []).map((m: any) => ({
+            id: `local-${m.file}`,
+            title: m.title,
+            artist: m.artist || '未知歌手',
+            cover: '',
+            src: m.file,
+            lyrics: [{ time: 0, text: '没有歌词喵~' }],
+            isLocal: true,
+          }));
 
-    if (siteConfig.cloudMusicIds?.length > 0) fetchMusicData();
-    else setIsLoading(false);
+          if (isMounted) {
+            const all = [...localSongs, ...mergedPlaylist];
+            if (all.length > 0) setPlaylist(all);
+            else setCurrentLyric("云端链路受阻");
+            setIsLoading(false);
+          }
+        } catch (error) {
+          if (isMounted) { setCurrentLyric("网络初始化失败"); setIsLoading(false); }
+        }
+      };
+
+      if (siteConfig.cloudMusicIds?.length > 0 || ((siteConfig as any).localMusic || []).length > 0) fetchMusicData();
+      else setIsLoading(false);
 
     return () => { isMounted = false; };
   }, []);

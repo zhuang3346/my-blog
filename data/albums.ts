@@ -4,6 +4,21 @@ export interface Album { id: string; title: string; description: string; cover: 
 
 export const albums: Album[] = [
   {
+    "title": "楪祈",
+    "cover": "/upload-a0195a9c.png",
+    "id": "album_1785666555747",
+    "photos": [
+      {
+        "url": "/upload-5a5680ce.png"
+      },
+      {
+        "url": "/upload-144bbb07.png"
+      }
+    ],
+    "date": "2026-08-02",
+    "description": "楪祈牛逼！"
+  },
+  {
     "id": "terra-journey",
     "title": "泰拉大陆纪行",
     "description": "关于源石、孤星与前文明的视觉记录（测试用相册）",
