@@ -265,8 +265,9 @@ export function MusicProvider({ children }: { children: ReactNode }) {
         <audio
           ref={audioRef}
           src={currentSong.src}
+          preload="none"
           onTimeUpdate={handleTimeUpdate}
-          onEnded={handleEnded} // 使用我们重写的结束处理
+          onEnded={handleEnded}
           onLoadedMetadata={handleTimeUpdate}
         />
       )}

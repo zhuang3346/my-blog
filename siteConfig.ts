@@ -27,7 +27,7 @@ export const siteConfig = {
   counts: { photos: 128 },
   chatterTitle: "云端杂谈",
   chatterDescription: "云端的述梦者",
-  danmakuList: ["给一个啊", "不是人呢？", "塔菲牛逼喵", "在干嘛呢？", "有笨蛋嘛？", "前方高能反应！", "MD 模拟什么时候才能出图啊", "Graph Neural Networks 炼丹中...", "BUG 修复进度 99%", "今天背单词了吗？", "写算法中", "睡大觉中", "到底在干嘛？"],
+  danmakuList: ["不是，人呢？", "给一个啊", "塔菲牛逼喵", "在干嘛呢？", "有笨蛋嘛？", "前方高能反应！", "MD 模拟什么时候才能出图啊", "Graph Neural Networks 炼丹中...", "BUG 修复进度 99%", "今天背单词了吗？", "写算法中", "睡大觉中", "到底在干嘛？"],
   gitalkConfig: {
     clientID: "Ov23liSKYYGRCk468kOz",
     clientSecret: "",

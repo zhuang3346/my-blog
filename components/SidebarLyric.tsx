@@ -36,7 +36,7 @@ export default function SidebarLyric() {
           className="w-12 h-12 rounded-full overflow-hidden border-2 border-white/20 shadow-md animate-[spin_6s_linear_infinite]"
           style={{ animationPlayState: isPlaying ? 'running' : 'paused' }}
         >
-          <img src={currentSong.cover} className="w-full h-full object-cover" alt="cover" />
+          {currentSong.cover ? <img src={currentSong.cover} className="w-full h-full object-cover" alt="cover" /> : <div className="w-full h-full bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center text-white text-xs">🎵</div>}
         </div>
 
         <div className="flex-1 overflow-hidden">
