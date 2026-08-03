@@ -8,7 +8,7 @@ export const siteConfig = {
   navTitle: "SAO",
   navSuffix: "の",
   navAfter: "云边小卖部",
-  avatarUrl: "/upload-ffb37977.png",
+  avatarUrl: "/upload-56f540fd.png",
   useGradient: false,
   themeColors: ["#a18cd1", "#fbc2eb", "#a1c4fd", "#c2e9fb"],
   bgImages: ["/bg1.jpg", "/bg2.jpg", "/bg3.jpg"],
