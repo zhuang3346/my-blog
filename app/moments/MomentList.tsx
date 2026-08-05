@@ -12,7 +12,9 @@ function timeAgo(dateStr: string) {
   if (diffInSeconds < 60) return '刚刚';
   if (diffInSeconds < 3600) return `${Math.floor(diffInSeconds / 60)} 分钟前`;
   if (diffInSeconds < 86400) return `${Math.floor(diffInSeconds / 3600)} 小时前`;
-  return `${date.getFullYear()}.${String(date.getMonth() + 1).padStart(2, '0')}.${String(date.getDate()).padStart(2, '0')}`;
+  const hh = String(date.getHours()).padStart(2, '0');
+  const mm = String(date.getMinutes()).padStart(2, '0');
+  return `${date.getFullYear()}.${String(date.getMonth() + 1).padStart(2, '0')}.${String(date.getDate()).padStart(2, '0')} ${hh}:${mm}`;
 }
 
 export default function MomentList({ moments, authorName, avatarUrl }: any) {
