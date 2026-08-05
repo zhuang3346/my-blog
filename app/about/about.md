@@ -3,7 +3,7 @@ title: 关于我
 date: '2026-03-31 18:05:30'
 tags: []
 mood: ''
-cover: /upload-60165255.png
+cover: /upload-4ec03885.png
 description: ''
 ---
 
@@ -21,7 +21,6 @@ description: ''
 
 **欢迎各位朋友联系交流~**
 
-  
 ‍
 
 （最后，特别鸣谢XinghuisamaBlogs开源的网站框架！<https://github.com/heiehiehi/XinghuisamaBlogs>）

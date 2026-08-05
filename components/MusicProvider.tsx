@@ -104,9 +104,9 @@ export function MusicProvider({ children }: { children: ReactNode }) {
             id: `local-${m.file}`,
             title: m.title,
             artist: m.artist || '未知歌手',
-            cover: '',
+            cover: m.cover || '',
             src: m.file,
-            lyrics: [{ time: 0, text: '没有歌词喵~' }],
+            lyrics: m.lrc ? parseLrc(m.lrc) : [{ time: 0, text: '没有歌词喵~' }],
             isLocal: true,
           }));
 
