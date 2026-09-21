@@ -20,7 +20,7 @@ export const siteConfig = {
     github: "https://github.com/zhuang3346",
     gitee: "https://github.com/zhuang3346",
     google: "123",
-    email: "brinyan@yeah.net",
+    email: "zbyume@gmail.com",
     qq: "123",
     wechat: "123",
   },
